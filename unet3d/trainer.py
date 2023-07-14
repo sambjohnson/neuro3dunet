@@ -7,11 +7,11 @@ from torch.utils.tensorboard import SummaryWriter
 
 # Changed to import whole utils module instead of from .. import get_train_loaders 
 # to avoid circular import
-import pytorch3dunet.datasets.utils
-from pytorch3dunet.unet3d.losses import get_loss_criterion
-from pytorch3dunet.unet3d.metrics import get_evaluation_metric
-from pytorch3dunet.unet3d.model import get_model, UNet2D
-from pytorch3dunet.unet3d.utils import get_logger, get_tensorboard_formatter, create_optimizer, \
+# import datasets.utils
+from unet3d.losses import get_loss_criterion
+from unet3d.metrics import get_evaluation_metric
+from unet3d.model import get_model, UNet2D
+from unet3d.utils import get_logger, get_tensorboard_formatter, create_optimizer, \
     create_lr_scheduler, get_number_of_learnable_parameters
 from . import utils
 

@@ -11,11 +11,11 @@ from tqdm import tqdm
 
 # Changed import from pytorch3dunet.datasets.hdf5 import AbstractHDF5Dataset to
 # import whole module to avoid circular import error
-import pytorch3dunet.datasets.hdf5
+# import datasets.hdf5
 # likewise for SliceBuilder
-import pytorch3dunet.datasets.utils 
-from pytorch3dunet.unet3d.model import UNet2D
-from pytorch3dunet.unet3d.utils import get_logger
+# import datasets.utils
+from unet3d.model import UNet2D
+from unet3d.utils import get_logger
 
 logger = get_logger('UNetPredictor')
 
