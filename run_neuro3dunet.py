@@ -213,5 +213,6 @@ def main():
 
     train(dl_train, dl_val, model, optimizer, criterion)
 
-
+if __name__ == "__main__":
+    main()
 
