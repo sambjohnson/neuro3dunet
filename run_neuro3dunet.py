@@ -161,17 +161,8 @@ def train(dl_train,
     
 def main():
 
-    # Need
     train_dir = 'data/h5/train'
     val_dir = 'data/h5/val'
-
-
-    train_subjects = os.listdir(train_dir)
-    train_subject = train_subjects[0]
-
-    ordered_subject_list = sorted(os.listdir(train_dir))
-
-    # Need
     ds_train = HDF5Dataset(data_dir=train_dir)
     ds_val = HDF5Dataset(data_dir=val_dir)
 
@@ -179,18 +170,20 @@ def main():
 
     dl_train = DataLoader(ds_train, batch_size=batch_size, shuffle=True)
     dl_val = DataLoader(ds_val, batch_size=batch_size, shuffle=False)
-
+    print("Loaded Datasets")
     ## Define model
     in_channels = 1
     out_channels = 102
-
+    print(f"Creating model with {in_channels} in channels, and {out_channels} out channels.")
     model = UNet3D(in_channels=in_channels, out_channels=out_channels)
 
     # specifying "float" may or may not be necessary on the GPU
     # but it is required on CPU
 
+    print("Checking for CUDA availability. . . \n")
     if torch.cuda.is_available():
         # GPU is available
+        print("CUDA is available! \nAssigning model to CUDA")
         device = torch.device("cuda")
         model.to(device) 
     else:
@@ -202,15 +195,15 @@ def main():
     ## Training
     checkpoint_dir = './checkpoints'  # change this based on your OS and preferences
     os.makedirs(checkpoint_dir, exist_ok=True)
-
+    print("Defining optimizer for model")
     optimizer = optim.Adam(model.parameters())
     criterion = nn.CrossEntropyLoss()
-
+    
     # Other training parameters
     epochs = 10
     lr_scheduler_patience = 3
     lr_scheduler_factor = 0.1
-
+    print(f"\nTraining model\n\nepochs = {epochs}\nlr_scheduler_patience = {lr_scheduler_patience}\nlr_scheduler_factor = {lr_scheduler_factor}")
     train(dl_train, dl_val, model, optimizer, criterion)
 
 if __name__ == "__main__":
