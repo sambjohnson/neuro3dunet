@@ -94,9 +94,10 @@ def train(dl_train,
           model, 
           optimizer,
           criterion,
+          device,
           epochs=10,
           lr_scheduler=None
-         ):
+          ):
     """ Function to wrap the main training loop.
     """
     
@@ -119,6 +120,8 @@ def train(dl_train,
         for inputs, labels in dl_train:
             optimizer.zero_grad()
 
+            inputs = inputs.to(device)
+            labels = labels.to(device)
             # Forward pass
             outputs = model(inputs)
             loss = criterion(outputs, labels)
@@ -134,6 +137,8 @@ def train(dl_train,
         val_loss = 0.0
         with torch.no_grad():
             for inputs, labels in dl_val:
+                inputs = inputs.to(device)
+                labels = labels.to(device)
                 outputs = model(inputs)
                 loss = criterion(outputs, labels)
                 val_loss += loss.item()
@@ -204,7 +209,7 @@ def main():
     lr_scheduler_patience = 3
     lr_scheduler_factor = 0.1
     print(f"\nTraining model\n\nepochs = {epochs}\nlr_scheduler_patience = {lr_scheduler_patience}\nlr_scheduler_factor = {lr_scheduler_factor}")
-    train(dl_train, dl_val, model, optimizer, criterion)
+    train(dl_train, dl_val, model, optimizer, criterion, device)
 
 if __name__ == "__main__":
     main()
