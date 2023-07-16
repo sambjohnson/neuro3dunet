@@ -120,8 +120,8 @@ def train(dl_train,
         for inputs, labels in dl_train:
             optimizer.zero_grad()
 
-            inputs = inputs.to(device)
-            labels = labels.to(device)
+            inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
+            labels = labels.to(torch.bfloat16).to(device, dtype=float)
             # Forward pass
             outputs = model(inputs)
             loss = criterion(outputs, labels)
@@ -137,8 +137,8 @@ def train(dl_train,
         val_loss = 0.0
         with torch.no_grad():
             for inputs, labels in dl_val:
-                inputs = inputs.to(device)
-                labels = labels.to(device)
+                inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
+                labels = labels.to(torch.bfloat16).to(device, dtype=float)
                 outputs = model(inputs)
                 loss = criterion(outputs, labels)
                 val_loss += loss.item()
