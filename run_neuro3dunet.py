@@ -88,18 +88,27 @@ class HDF5Dataset(Dataset):
 
         return x, y
     
+# specifying "float" may or may not be necessary on the GPU
+# but it is required on CPU
+def get_device():
+    device = t.device("cuda") if t.cuda.is_available() else t.device("cpu")
+    return device
+    
+
 
 def train(dl_train, 
           dl_val, 
           model, 
           optimizer,
           criterion,
-          device,
-          epochs=10,
-          lr_scheduler=None
-          ):
+          n_batches=1e3,
+          lr_scheduler=None,
+          epochs=10
+         ):
     """ Function to wrap the main training loop.
     """
+    
+    device = get_device()  # defined in above section
     
     # parse default parameters
     if lr_scheduler is None:
@@ -112,7 +121,6 @@ def train(dl_train,
   
     # Training loop
     best_val_loss = float('inf')
-    
     for epoch in range(epochs):
         # Training
         model.train()
@@ -120,9 +128,10 @@ def train(dl_train,
         for inputs, labels in dl_train:
             optimizer.zero_grad()
 
-            inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
-            labels = labels.to(torch.bfloat16).to(device, dtype=float)
             # Forward pass
+            inputs = inputs.to(device)
+            labels = labels.to(device)
+            
             outputs = model(inputs)
             loss = criterion(outputs, labels)
 
@@ -137,8 +146,9 @@ def train(dl_train,
         val_loss = 0.0
         with torch.no_grad():
             for inputs, labels in dl_val:
-                inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
-                labels = labels.to(torch.bfloat16).to(device, dtype=float)
+                inputs = inputs.to(device)
+                labels = labels.to(device)
+                
                 outputs = model(inputs)
                 loss = criterion(outputs, labels)
                 val_loss += loss.item()
@@ -157,6 +167,7 @@ def train(dl_train,
         if val_loss < best_val_loss:
             best_val_loss = val_loss
             # Save the model checkpoint if desired
+            
 
         # Check early stopping condition if desired
         # TODO
