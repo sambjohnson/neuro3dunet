@@ -171,8 +171,6 @@ def train(dl_train,
 
         # Check early stopping condition if desired
         # TODO
-
-    # Training complete
     return model
     
 def main():
