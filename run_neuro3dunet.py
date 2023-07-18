@@ -9,7 +9,6 @@ import torch.nn.functional as f
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 
-
 # translated from imports of unet3d.model
 from unet3d.buildingblocks import DoubleConv, ResNetBlock, ResNetBlockSE, \
     create_decoders, create_encoders
@@ -80,35 +79,27 @@ class HDF5Dataset(Dataset):
         
         x = t.from_numpy(np.array(x_np))
         y = t.from_numpy(np.array(y_np))
-        
+
         h5.close() # close the h5 file to avoid extra memory usage
 
         # If necessary, apply any preprocessing or transformations to the data
         # data = ...
-
+        x = x[:, :64, :64, :64]
+        y = y[:, :64, :64, :64]
         return x, y
     
-# specifying "float" may or may not be necessary on the GPU
-# but it is required on CPU
-def get_device():
-    device = t.device("cuda") if t.cuda.is_available() else t.device("cpu")
-    return device
-    
-
 
 def train(dl_train, 
           dl_val, 
           model, 
           optimizer,
           criterion,
-          n_batches=1e3,
-          lr_scheduler=None,
-          epochs=10
-         ):
+          device,
+          epochs=10,
+          lr_scheduler=None
+          ):
     """ Function to wrap the main training loop.
     """
-    
-    device = get_device()  # defined in above section
     
     # parse default parameters
     if lr_scheduler is None:
@@ -121,6 +112,7 @@ def train(dl_train,
   
     # Training loop
     best_val_loss = float('inf')
+    
     for epoch in range(epochs):
         # Training
         model.train()
@@ -128,10 +120,9 @@ def train(dl_train,
         for inputs, labels in dl_train:
             optimizer.zero_grad()
 
+            inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
+            labels = labels.to(torch.bfloat16).to(device, dtype=float)
             # Forward pass
-            inputs = inputs.to(device)
-            labels = labels.to(device)
-            
             outputs = model(inputs)
             loss = criterion(outputs, labels)
 
@@ -140,19 +131,22 @@ def train(dl_train,
             optimizer.step()
 
             train_loss += loss.item()
-
+            inputs.detach()
+            labels.detach()
+            torch.cuda.empty_cache()
         # Validation
         model.eval()
         val_loss = 0.0
         with torch.no_grad():
             for inputs, labels in dl_val:
-                inputs = inputs.to(device)
-                labels = labels.to(device)
-                
+                inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
+                labels = labels.to(torch.bfloat16).to(device, dtype=float)
                 outputs = model(inputs)
                 loss = criterion(outputs, labels)
                 val_loss += loss.item()
-
+                inputs.detach()
+                labels.detach()
+                torch.cuda.empty_cache()
         # Compute average loss
         train_loss /= len(dl_train)
         val_loss /= len(dl_val)
@@ -167,10 +161,11 @@ def train(dl_train,
         if val_loss < best_val_loss:
             best_val_loss = val_loss
             # Save the model checkpoint if desired
-            
 
         # Check early stopping condition if desired
         # TODO
+
+    # Training complete
     return model
     
 def main():
@@ -184,7 +179,8 @@ def main():
 
     dl_train = DataLoader(ds_train, batch_size=batch_size, shuffle=True)
     dl_val = DataLoader(ds_val, batch_size=batch_size, shuffle=False)
-    print("Loaded Datasets")
+    print("Loaded Datasets\n")
+
     ## Define model
     in_channels = 1
     out_channels = 102
@@ -199,7 +195,7 @@ def main():
         # GPU is available
         print("CUDA is available! \nAssigning model to CUDA")
         device = torch.device("cuda")
-        model.to(device) 
+        model.to(device, dtype=float) 
     else:
         # GPU is not available, fall back to CPU
         device = torch.device("cpu")
@@ -207,6 +203,7 @@ def main():
 
 
     ## Training
+    model = nn.DataParallel(model)
     checkpoint_dir = './checkpoints'  # change this based on your OS and preferences
     os.makedirs(checkpoint_dir, exist_ok=True)
     print("Defining optimizer for model")
