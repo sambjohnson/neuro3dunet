@@ -9,7 +9,6 @@ import torch.nn.functional as f
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
 
-
 # translated from imports of unet3d.model
 from unet3d.buildingblocks import DoubleConv, ResNetBlock, ResNetBlockSE, \
     create_decoders, create_encoders
@@ -80,12 +79,13 @@ class HDF5Dataset(Dataset):
         
         x = t.from_numpy(np.array(x_np))
         y = t.from_numpy(np.array(y_np))
-        
+
         h5.close() # close the h5 file to avoid extra memory usage
 
         # If necessary, apply any preprocessing or transformations to the data
         # data = ...
-
+        x = x[:, :64, :64, :64]
+        y = y[:, :64, :64, :64]
         return x, y
     
 
@@ -131,7 +131,9 @@ def train(dl_train,
             optimizer.step()
 
             train_loss += loss.item()
-
+            inputs.detach()
+            labels.detach()
+            torch.cuda.empty_cache()
         # Validation
         model.eval()
         val_loss = 0.0
@@ -142,7 +144,9 @@ def train(dl_train,
                 outputs = model(inputs)
                 loss = criterion(outputs, labels)
                 val_loss += loss.item()
-
+                inputs.detach()
+                labels.detach()
+                torch.cuda.empty_cache()
         # Compute average loss
         train_loss /= len(dl_train)
         val_loss /= len(dl_val)
@@ -175,7 +179,8 @@ def main():
 
     dl_train = DataLoader(ds_train, batch_size=batch_size, shuffle=True)
     dl_val = DataLoader(ds_val, batch_size=batch_size, shuffle=False)
-    print("Loaded Datasets")
+    print("Loaded Datasets\n")
+
     ## Define model
     in_channels = 1
     out_channels = 102
@@ -190,7 +195,7 @@ def main():
         # GPU is available
         print("CUDA is available! \nAssigning model to CUDA")
         device = torch.device("cuda")
-        model.to(device) 
+        model.to(device, dtype=float) 
     else:
         # GPU is not available, fall back to CPU
         device = torch.device("cpu")
@@ -198,6 +203,7 @@ def main():
 
 
     ## Training
+    model = nn.DataParallel(model)
     checkpoint_dir = './checkpoints'  # change this based on your OS and preferences
     os.makedirs(checkpoint_dir, exist_ok=True)
     print("Defining optimizer for model")
