@@ -8,6 +8,7 @@ import torch.nn as nn
 import torch.nn.functional as f
 from torch.utils.data import Dataset
 from torch.utils.data import DataLoader
+from torch.utils.data.distributed import DistributedSampler
 
 # translated from imports of unet3d.model
 from unet3d.buildingblocks import DoubleConv, ResNetBlock, ResNetBlockSE, \
@@ -84,8 +85,8 @@ class HDF5Dataset(Dataset):
 
         # If necessary, apply any preprocessing or transformations to the data
         # data = ...
-        x = x[:, :64, :64, :64]
-        y = y[:, :64, :64, :64]
+        #x = x[:, :64, :64, :64]
+        #y = y[:, :64, :64, :64]
         return x, y
     
 
@@ -123,6 +124,8 @@ def train(dl_train,
             inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
             labels = labels.to(torch.bfloat16).to(device, dtype=float)
             # Forward pass
+            #print(torch.cuda.memory_summary(abbreviated=False))
+            os.system("nvidia-smi")
             outputs = model(inputs)
             loss = criterion(outputs, labels)
 
@@ -130,6 +133,7 @@ def train(dl_train,
             loss.backward()
             optimizer.step()
 
+            
             train_loss += loss.item()
             inputs.detach()
             labels.detach()
@@ -172,15 +176,19 @@ def main():
 
     train_dir = 'data/h5/train'
     val_dir = 'data/h5/val'
-    ds_train = HDF5Dataset(data_dir=train_dir)
-    ds_val = HDF5Dataset(data_dir=val_dir)
+    # option to use DistributedSampler to distribute data over multiple GPUs
 
     batch_size = 1
+
+    ds_train = HDF5Dataset(data_dir=train_dir)
+    ds_val = HDF5Dataset(data_dir=val_dir)
 
     dl_train = DataLoader(ds_train, batch_size=batch_size, shuffle=True)
     dl_val = DataLoader(ds_val, batch_size=batch_size, shuffle=False)
     print("Loaded Datasets\n")
 
+
+    
     ## Define model
     in_channels = 1
     out_channels = 102
@@ -195,15 +203,42 @@ def main():
         # GPU is available
         print("CUDA is available! \nAssigning model to CUDA")
         device = torch.device("cuda")
-        model.to(device, dtype=float) 
+
+        ### DistributedDataParallel chunk
+        #os.environ['MASTER_ADDR'] = 'localhost'
+        #os.environ['MASTER_PORT'] = '12345'
+        #torch.distributed.init_process_group(backend='nccl',
+        #                                     init_method = "env://",
+        #                                     world_size = 2,
+        #                                     rank = 1)
+        #model = nn.parallel.DistributedDataParallel(model, device_ids=[0,1])
+        model = nn.DataParallel(model, device_ids=[0,1])
+        model.to(device, dtype=float)
     else:
         # GPU is not available, fall back to CPU
         device = torch.device("cpu")
         model.to(device, dtype=float) 
 
 
+        
+    ### DistributedDataParallel chunk
+    ## When this is run, it hangs at this stage
+    ## Attempting to distribute the data with DistributedSampler()
+    
+    #dl_train = DataLoader(ds_train, batch_size=batch_size, shuffle=True)
+    #dl_val = DataLoader(ds_val, batch_size=batch_size, shuffle=False)
+    #print("Loaded Datasets\n")
+
+
+    #ds_train = HDF5Dataset(data_dir=train_dir)
+    #ds_train = DistributedSampler(ds_train)
+    
+    #ds_val = HDF5Dataset(data_dir=val_dir)
+    #ds_val = DistributedSampler(ds_val)
+    #####
+
     ## Training
-    model = nn.DataParallel(model)
+    
     checkpoint_dir = './checkpoints'  # change this based on your OS and preferences
     os.makedirs(checkpoint_dir, exist_ok=True)
     print("Defining optimizer for model")
