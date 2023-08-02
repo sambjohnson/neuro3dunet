@@ -102,7 +102,7 @@ def chunk_entire_dataset(data_in_dir,
     
     h5_filenames = sorted(os.listdir(data_in_dir))
     for h5_filename in h5_filenames:
-
+        
         chunk_size = 84  # a little under 256 // 3
         stride_size = 56  # with a chunk_size of 84, a stride size of 64 allows for some overlap of chunks.
 
@@ -123,17 +123,30 @@ def main():
     chunk_size = 84
     stride_size = 56
 
-    base_dir = "/home/weiner/HCP/projects/CNL_scalpel/h5"
-    train_dir = "/home/weiner/HCP/projects/CNL_scalpel/h5/train"
-    data_in_dir = train_dir
-    data_out_dir = f'{base_dir}/train_chunks/'
-    os.makedirs(data_out_dir, exist_ok=True)
+    #base_dir = "/home/weiner/HCP/projects/CNL_scalpel/h5"
+    #train_dir = "/home/weiner/HCP/projects/CNL_scalpel/h5/train"
+    #data_in_dir = train_dir
+    #data_out_dir = f'{base_dir}/train_chunks/'
 
+    #os.makedirs(data_out_dir, exist_ok=True)
+
+
+    #chunk_entire_dataset(data_in_dir=data_in_dir,
+    #                    data_out_dir=data_out_dir, 
+     #                   chunk_size=chunk_size, 
+     #                   stride_size=stride_size)
+
+    base_dir = "/home/weiner/HCP/projects/CNL_scalpel/h5"
+    test_dir = "/home/weiner/HCP/projects/CNL_scalpel/h5/test"
+    data_in_dir = test_dir
+    data_out_dir = f'/home/weiner/bparker/NotBackedUp/test_chunks/'
+    os.makedirs(data_out_dir, exist_ok=True)
 
     chunk_entire_dataset(data_in_dir=data_in_dir,
                         data_out_dir=data_out_dir, 
                         chunk_size=chunk_size, 
                         stride_size=stride_size)
 
+    
 if __name__ == "__main__":
     main()

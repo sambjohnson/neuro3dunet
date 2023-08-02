@@ -1,0 +1,3342 @@
+23-07-23 10:22:37 - 
+Training model
+
+epochs = {epochs}
+lr_scheduler_patience = {lr_scheduler_patience}
+lr_scheduler_factor = {lr_scheduler_factor}
+23-07-23 10:22:37 - 
+Beginning epoch 
+
+23-07-23 10:22:41 - New octant 0 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:22:50 - New octant 1 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:22:57 - New octant 2 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:23:05 - New octant 3 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:23:11 - New octant 4 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:23:18 - New octant 5 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:23:25 - New octant 6 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:23:32 - New octant 7 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:23:40 - New octant 8 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:23:47 - New octant 9 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:23:54 - New octant 10 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:02 - New octant 11 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:09 - New octant 12 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:16 - New octant 13 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:22 - New octant 14 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:29 - New octant 15 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:36 - New octant 16 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:42 - New octant 17 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:49 - New octant 18 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:24:57 - New octant 19 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:04 - New octant 20 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:11 - New octant 21 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:18 - New octant 22 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:24 - New octant 23 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:32 - New octant 24 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:38 - New octant 25 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:45 - New octant 26 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:52 - New octant 27 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:25:59 - New octant 28 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:26:06 - New octant 29 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:26:13 - New octant 30 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:26:20 - New octant 31 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:26:27 - New octant 32 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:26:34 - New octant 33 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:26:41 - New octant 34 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:26:48 - New octant 35 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:26:55 - New octant 36 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:02 - New octant 37 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:09 - New octant 38 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:16 - New octant 39 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:23 - New octant 40 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:30 - New octant 41 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:37 - New octant 42 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:44 - New octant 43 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:51 - New octant 44 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:27:58 - New octant 45 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:28:05 - New octant 46 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:28:12 - New octant 47 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:28:19 - New octant 48 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:28:26 - New octant 49 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:28:33 - New octant 50 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:28:40 - New octant 51 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:28:48 - New octant 52 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:28:55 - New octant 53 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:02 - New octant 54 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:09 - New octant 55 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:16 - New octant 56 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:23 - New octant 57 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:31 - New octant 58 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:38 - New octant 59 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:45 - New octant 60 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:52 - New octant 61 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:29:59 - New octant 62 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:30:06 - New octant 63 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:30:13 - New octant 64 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:30:20 - New octant 65 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:30:27 - New octant 66 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:30:34 - New octant 67 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:30:40 - New octant 68 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:30:48 - New octant 69 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:30:54 - New octant 70 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:02 - New octant 71 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:08 - New octant 72 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:15 - New octant 73 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:22 - New octant 74 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:29 - New octant 75 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:35 - New octant 76 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:43 - New octant 77 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:49 - New octant 78 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:31:57 - New octant 79 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:04 - New octant 80 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:11 - New octant 81 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:17 - New octant 82 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:24 - New octant 83 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:31 - New octant 84 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:38 - New octant 85 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:45 - New octant 86 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:53 - New octant 87 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:32:59 - New octant 88 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:33:06 - New octant 89 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:33:13 - New octant 90 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:33:21 - New octant 91 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:33:28 - New octant 92 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:33:35 - New octant 93 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:33:41 - New octant 94 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:33:48 - New octant 95 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:33:55 - New octant 96 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:02 - New octant 97 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:10 - New octant 98 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:17 - New octant 99 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:24 - New octant 100 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:31 - New octant 101 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:38 - New octant 102 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:45 - New octant 103 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:52 - New octant 104 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:34:59 - New octant 105 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:35:06 - New octant 106 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:35:13 - New octant 107 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:35:20 - New octant 108 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:35:27 - New octant 109 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:35:34 - New octant 110 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:35:42 - New octant 111 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:35:48 - New octant 112 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:35:56 - New octant 113 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:02 - New octant 114 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:09 - New octant 115 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:17 - New octant 116 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:24 - New octant 117 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:31 - New octant 118 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:38 - New octant 119 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:45 - New octant 120 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:52 - New octant 121 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:36:59 - New octant 122 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:37:06 - New octant 123 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:37:13 - New octant 124 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:37:21 - New octant 125 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:37:28 - New octant 126 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:37:35 - New octant 127 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:37:42 - New octant 128 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:37:49 - New octant 129 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:37:56 - New octant 130 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:38:04 - New octant 131 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:38:11 - New octant 132 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:38:18 - New octant 133 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:38:25 - New octant 134 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:38:32 - New octant 135 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:38:40 - New octant 136 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:38:46 - New octant 137 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:38:54 - New octant 138 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:01 - New octant 139 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:08 - New octant 140 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:15 - New octant 141 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:22 - New octant 142 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:29 - New octant 143 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:36 - New octant 144 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:43 - New octant 145 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:50 - New octant 146 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:39:57 - New octant 147 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:40:04 - New octant 148 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:40:11 - New octant 149 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:40:19 - New octant 150 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:40:25 - New octant 151 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:40:32 - New octant 152 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:40:40 - New octant 153 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:40:47 - New octant 154 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:40:54 - New octant 155 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:00 - New octant 156 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:07 - New octant 157 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:14 - New octant 158 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:21 - New octant 159 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:28 - New octant 160 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:35 - New octant 161 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:42 - New octant 162 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:49 - New octant 163 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:41:56 - New octant 164 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:04 - New octant 165 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:10 - New octant 166 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:18 - New octant 167 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:25 - New octant 168 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:32 - New octant 169 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:38 - New octant 170 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:45 - New octant 171 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:52 - New octant 172 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:42:59 - New octant 173 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:43:06 - New octant 174 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:43:14 - New octant 175 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:43:21 - New octant 176 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:43:28 - New octant 177 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:43:35 - New octant 178 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:43:42 - New octant 179 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:43:49 - New octant 180 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:43:56 - New octant 181 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:02 - New octant 182 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:09 - New octant 183 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:16 - New octant 184 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:23 - New octant 185 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:30 - New octant 186 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:37 - New octant 187 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:44 - New octant 188 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:51 - New octant 189 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:44:58 - New octant 190 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:45:06 - New octant 191 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:45:12 - New octant 192 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:45:19 - New octant 193 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:45:26 - New octant 194 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:45:33 - New octant 195 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:45:40 - New octant 196 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:45:47 - New octant 197 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:45:54 - New octant 198 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:01 - New octant 199 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:08 - New octant 200 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:15 - New octant 201 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:22 - New octant 202 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:29 - New octant 203 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:36 - New octant 204 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:43 - New octant 205 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:50 - New octant 206 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:46:57 - New octant 207 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:47:04 - New octant 208 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:47:11 - New octant 209 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:47:18 - New octant 210 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:47:26 - New octant 211 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:47:32 - New octant 212 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:47:40 - New octant 213 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:47:47 - New octant 214 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:47:54 - New octant 215 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:01 - New octant 216 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:08 - New octant 217 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:15 - New octant 218 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:22 - New octant 219 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:29 - New octant 220 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:36 - New octant 221 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:44 - New octant 222 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:51 - New octant 223 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:48:58 - New octant 224 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:49:05 - New octant 225 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:49:13 - New octant 226 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:49:19 - New octant 227 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:49:26 - New octant 228 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:49:33 - New octant 229 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:49:39 - New octant 230 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:49:47 - New octant 231 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:49:54 - New octant 232 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:01 - New octant 233 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:09 - New octant 234 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:16 - New octant 235 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:23 - New octant 236 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:31 - New octant 237 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:38 - New octant 238 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:44 - New octant 239 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:51 - New octant 240 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:50:59 - New octant 241 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:51:05 - New octant 242 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:51:12 - New octant 243 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:51:19 - New octant 244 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:51:26 - New octant 245 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:51:33 - New octant 246 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:51:41 - New octant 247 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:51:48 - New octant 248 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:51:55 - New octant 249 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:52:02 - New octant 250 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:52:10 - New octant 251 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:52:17 - New octant 252 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:52:24 - New octant 253 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:52:31 - New octant 254 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:52:38 - New octant 255 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:52:46 - New octant 256 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:52:53 - New octant 257 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:00 - New octant 258 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:07 - New octant 259 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:14 - New octant 260 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:20 - New octant 261 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:27 - New octant 262 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:35 - New octant 263 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:42 - New octant 264 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:49 - New octant 265 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:53:56 - New octant 266 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:54:03 - New octant 267 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:54:11 - New octant 268 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:54:18 - New octant 269 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:54:25 - New octant 270 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:54:33 - New octant 271 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:54:40 - New octant 272 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:54:47 - New octant 273 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:54:54 - New octant 274 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:01 - New octant 275 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:08 - New octant 276 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:14 - New octant 277 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:22 - New octant 278 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:29 - New octant 279 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:35 - New octant 280 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:43 - New octant 281 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:49 - New octant 282 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:55:56 - New octant 283 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:03 - New octant 284 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:10 - New octant 285 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:17 - New octant 286 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:24 - New octant 287 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:31 - New octant 288 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:38 - New octant 289 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:45 - New octant 290 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:52 - New octant 291 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:56:58 - New octant 292 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:57:06 - New octant 293 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:57:13 - New octant 294 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:57:20 - New octant 295 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:57:28 - New octant 296 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:57:35 - New octant 297 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:57:42 - New octant 298 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:57:50 - New octant 299 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:57:57 - New octant 300 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:58:04 - New octant 301 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:58:11 - New octant 302 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:58:18 - New octant 303 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:58:25 - New octant 304 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:58:32 - New octant 305 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:58:39 - New octant 306 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:58:47 - New octant 307 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:58:54 - New octant 308 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:01 - New octant 309 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:08 - New octant 310 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:15 - New octant 311 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:21 - New octant 312 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:29 - New octant 313 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:36 - New octant 314 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:43 - New octant 315 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:51 - New octant 316 / 3840 in epoch 0 / 10
+
+
+23-07-23 10:59:58 - New octant 317 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:00:05 - New octant 318 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:00:11 - New octant 319 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:00:19 - New octant 320 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:00:26 - New octant 321 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:00:32 - New octant 322 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:00:39 - New octant 323 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:00:46 - New octant 324 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:00:52 - New octant 325 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:00 - New octant 326 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:07 - New octant 327 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:13 - New octant 328 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:21 - New octant 329 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:27 - New octant 330 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:34 - New octant 331 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:41 - New octant 332 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:47 - New octant 333 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:01:55 - New octant 334 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:02 - New octant 335 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:09 - New octant 336 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:15 - New octant 337 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:22 - New octant 338 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:29 - New octant 339 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:36 - New octant 340 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:43 - New octant 341 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:50 - New octant 342 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:02:58 - New octant 343 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:05 - New octant 344 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:11 - New octant 345 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:18 - New octant 346 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:24 - New octant 347 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:31 - New octant 348 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:38 - New octant 349 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:44 - New octant 350 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:51 - New octant 351 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:03:58 - New octant 352 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:04:05 - New octant 353 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:04:11 - New octant 354 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:04:18 - New octant 355 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:04:25 - New octant 356 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:04:32 - New octant 357 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:04:40 - New octant 358 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:04:46 - New octant 359 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:04:54 - New octant 360 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:00 - New octant 361 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:08 - New octant 362 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:14 - New octant 363 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:21 - New octant 364 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:28 - New octant 365 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:34 - New octant 366 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:42 - New octant 367 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:49 - New octant 368 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:05:56 - New octant 369 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:06:03 - New octant 370 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:06:10 - New octant 371 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:06:17 - New octant 372 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:06:24 - New octant 373 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:06:31 - New octant 374 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:06:38 - New octant 375 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:06:46 - New octant 376 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:06:53 - New octant 377 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:01 - New octant 378 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:07 - New octant 379 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:14 - New octant 380 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:21 - New octant 381 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:28 - New octant 382 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:35 - New octant 383 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:42 - New octant 384 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:48 - New octant 385 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:07:55 - New octant 386 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:02 - New octant 387 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:09 - New octant 388 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:16 - New octant 389 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:24 - New octant 390 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:30 - New octant 391 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:38 - New octant 392 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:45 - New octant 393 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:52 - New octant 394 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:08:59 - New octant 395 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:09:06 - New octant 396 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:09:12 - New octant 397 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:09:19 - New octant 398 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:09:26 - New octant 399 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:09:33 - New octant 400 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:09:40 - New octant 401 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:09:48 - New octant 402 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:09:54 - New octant 403 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:02 - New octant 404 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:08 - New octant 405 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:15 - New octant 406 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:22 - New octant 407 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:29 - New octant 408 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:36 - New octant 409 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:43 - New octant 410 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:50 - New octant 411 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:10:57 - New octant 412 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:11:04 - New octant 413 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:11:12 - New octant 414 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:11:19 - New octant 415 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:11:26 - New octant 416 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:11:33 - New octant 417 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:11:40 - New octant 418 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:11:47 - New octant 419 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:11:54 - New octant 420 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:01 - New octant 421 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:07 - New octant 422 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:14 - New octant 423 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:21 - New octant 424 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:28 - New octant 425 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:35 - New octant 426 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:42 - New octant 427 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:50 - New octant 428 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:12:57 - New octant 429 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:13:04 - New octant 430 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:13:10 - New octant 431 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:13:18 - New octant 432 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:13:25 - New octant 433 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:13:32 - New octant 434 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:13:39 - New octant 435 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:13:46 - New octant 436 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:13:52 - New octant 437 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:00 - New octant 438 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:07 - New octant 439 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:14 - New octant 440 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:20 - New octant 441 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:28 - New octant 442 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:35 - New octant 443 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:42 - New octant 444 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:48 - New octant 445 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:14:56 - New octant 446 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:15:03 - New octant 447 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:15:10 - New octant 448 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:15:17 - New octant 449 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:15:23 - New octant 450 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:15:31 - New octant 451 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:15:38 - New octant 452 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:15:46 - New octant 453 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:15:53 - New octant 454 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:00 - New octant 455 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:08 - New octant 456 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:15 - New octant 457 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:22 - New octant 458 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:30 - New octant 459 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:37 - New octant 460 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:44 - New octant 461 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:51 - New octant 462 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:16:58 - New octant 463 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:17:05 - New octant 464 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:17:12 - New octant 465 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:17:19 - New octant 466 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:17:27 - New octant 467 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:17:34 - New octant 468 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:17:42 - New octant 469 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:17:49 - New octant 470 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:17:56 - New octant 471 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:18:04 - New octant 472 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:18:11 - New octant 473 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:18:18 - New octant 474 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:18:25 - New octant 475 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:18:33 - New octant 476 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:18:40 - New octant 477 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:18:47 - New octant 478 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:18:55 - New octant 479 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:19:02 - New octant 480 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:19:09 - New octant 481 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:19:16 - New octant 482 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:19:23 - New octant 483 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:19:31 - New octant 484 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:19:38 - New octant 485 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:19:45 - New octant 486 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:19:52 - New octant 487 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:00 - New octant 488 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:07 - New octant 489 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:14 - New octant 490 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:21 - New octant 491 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:28 - New octant 492 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:35 - New octant 493 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:42 - New octant 494 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:48 - New octant 495 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:20:56 - New octant 496 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:21:02 - New octant 497 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:21:09 - New octant 498 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:21:17 - New octant 499 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:21:24 - New octant 500 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:21:31 - New octant 501 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:21:38 - New octant 502 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:21:45 - New octant 503 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:21:52 - New octant 504 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:00 - New octant 505 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:06 - New octant 506 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:13 - New octant 507 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:21 - New octant 508 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:27 - New octant 509 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:34 - New octant 510 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:41 - New octant 511 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:49 - New octant 512 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:22:56 - New octant 513 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:03 - New octant 514 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:10 - New octant 515 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:17 - New octant 516 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:24 - New octant 517 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:30 - New octant 518 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:37 - New octant 519 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:44 - New octant 520 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:52 - New octant 521 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:23:59 - New octant 522 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:24:06 - New octant 523 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:24:13 - New octant 524 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:24:20 - New octant 525 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:24:27 - New octant 526 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:24:35 - New octant 527 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:24:42 - New octant 528 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:24:49 - New octant 529 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:24:56 - New octant 530 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:03 - New octant 531 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:10 - New octant 532 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:17 - New octant 533 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:25 - New octant 534 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:32 - New octant 535 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:38 - New octant 536 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:45 - New octant 537 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:52 - New octant 538 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:25:59 - New octant 539 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:26:06 - New octant 540 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:26:14 - New octant 541 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:26:21 - New octant 542 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:26:28 - New octant 543 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:26:35 - New octant 544 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:26:42 - New octant 545 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:26:49 - New octant 546 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:26:56 - New octant 547 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:04 - New octant 548 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:11 - New octant 549 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:18 - New octant 550 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:25 - New octant 551 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:32 - New octant 552 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:39 - New octant 553 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:46 - New octant 554 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:52 - New octant 555 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:27:59 - New octant 556 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:28:07 - New octant 557 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:28:14 - New octant 558 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:28:21 - New octant 559 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:28:28 - New octant 560 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:28:35 - New octant 561 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:28:42 - New octant 562 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:28:49 - New octant 563 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:28:56 - New octant 564 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:03 - New octant 565 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:10 - New octant 566 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:17 - New octant 567 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:24 - New octant 568 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:31 - New octant 569 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:38 - New octant 570 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:44 - New octant 571 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:52 - New octant 572 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:29:59 - New octant 573 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:30:06 - New octant 574 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:30:13 - New octant 575 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:30:21 - New octant 576 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:30:28 - New octant 577 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:30:35 - New octant 578 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:30:42 - New octant 579 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:30:50 - New octant 580 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:30:56 - New octant 581 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:31:04 - New octant 582 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:31:11 - New octant 583 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:31:18 - New octant 584 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:31:25 - New octant 585 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:31:32 - New octant 586 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:31:39 - New octant 587 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:31:46 - New octant 588 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:31:54 - New octant 589 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:01 - New octant 590 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:08 - New octant 591 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:14 - New octant 592 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:21 - New octant 593 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:27 - New octant 594 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:35 - New octant 595 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:42 - New octant 596 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:49 - New octant 597 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:32:56 - New octant 598 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:33:04 - New octant 599 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:33:10 - New octant 600 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:33:18 - New octant 601 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:33:25 - New octant 602 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:33:32 - New octant 603 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:33:40 - New octant 604 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:33:46 - New octant 605 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:33:53 - New octant 606 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:00 - New octant 607 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:06 - New octant 608 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:14 - New octant 609 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:21 - New octant 610 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:29 - New octant 611 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:36 - New octant 612 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:43 - New octant 613 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:50 - New octant 614 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:34:57 - New octant 615 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:35:04 - New octant 616 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:35:10 - New octant 617 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:35:17 - New octant 618 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:35:25 - New octant 619 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:35:32 - New octant 620 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:35:39 - New octant 621 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:35:46 - New octant 622 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:35:54 - New octant 623 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:01 - New octant 624 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:08 - New octant 625 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:15 - New octant 626 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:21 - New octant 627 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:28 - New octant 628 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:35 - New octant 629 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:43 - New octant 630 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:49 - New octant 631 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:36:57 - New octant 632 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:37:04 - New octant 633 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:37:11 - New octant 634 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:37:18 - New octant 635 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:37:25 - New octant 636 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:37:32 - New octant 637 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:37:39 - New octant 638 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:37:46 - New octant 639 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:37:53 - New octant 640 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:00 - New octant 641 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:08 - New octant 642 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:15 - New octant 643 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:22 - New octant 644 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:29 - New octant 645 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:36 - New octant 646 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:43 - New octant 647 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:50 - New octant 648 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:38:58 - New octant 649 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:39:04 - New octant 650 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:39:12 - New octant 651 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:39:19 - New octant 652 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:39:26 - New octant 653 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:39:33 - New octant 654 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:39:41 - New octant 655 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:39:47 - New octant 656 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:39:55 - New octant 657 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:01 - New octant 658 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:08 - New octant 659 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:15 - New octant 660 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:23 - New octant 661 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:30 - New octant 662 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:37 - New octant 663 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:43 - New octant 664 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:51 - New octant 665 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:40:58 - New octant 666 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:41:05 - New octant 667 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:41:12 - New octant 668 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:41:19 - New octant 669 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:41:25 - New octant 670 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:41:33 - New octant 671 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:41:40 - New octant 672 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:41:47 - New octant 673 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:41:54 - New octant 674 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:01 - New octant 675 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:08 - New octant 676 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:15 - New octant 677 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:23 - New octant 678 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:30 - New octant 679 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:37 - New octant 680 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:43 - New octant 681 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:50 - New octant 682 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:42:57 - New octant 683 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:43:05 - New octant 684 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:43:12 - New octant 685 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:43:20 - New octant 686 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:43:26 - New octant 687 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:43:33 - New octant 688 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:43:41 - New octant 689 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:43:48 - New octant 690 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:43:55 - New octant 691 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:01 - New octant 692 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:09 - New octant 693 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:16 - New octant 694 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:23 - New octant 695 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:30 - New octant 696 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:36 - New octant 697 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:43 - New octant 698 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:50 - New octant 699 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:44:57 - New octant 700 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:45:03 - New octant 701 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:45:10 - New octant 702 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:45:18 - New octant 703 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:45:24 - New octant 704 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:45:32 - New octant 705 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:45:38 - New octant 706 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:45:46 - New octant 707 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:45:53 - New octant 708 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:00 - New octant 709 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:06 - New octant 710 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:14 - New octant 711 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:21 - New octant 712 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:28 - New octant 713 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:35 - New octant 714 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:43 - New octant 715 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:49 - New octant 716 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:46:56 - New octant 717 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:47:03 - New octant 718 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:47:10 - New octant 719 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:47:18 - New octant 720 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:47:25 - New octant 721 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:47:32 - New octant 722 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:47:39 - New octant 723 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:47:46 - New octant 724 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:47:53 - New octant 725 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:00 - New octant 726 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:07 - New octant 727 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:14 - New octant 728 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:21 - New octant 729 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:28 - New octant 730 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:35 - New octant 731 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:42 - New octant 732 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:49 - New octant 733 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:48:56 - New octant 734 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:03 - New octant 735 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:10 - New octant 736 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:18 - New octant 737 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:25 - New octant 738 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:31 - New octant 739 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:38 - New octant 740 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:45 - New octant 741 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:51 - New octant 742 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:49:58 - New octant 743 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:50:05 - New octant 744 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:50:12 - New octant 745 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:50:18 - New octant 746 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:50:26 - New octant 747 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:50:33 - New octant 748 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:50:40 - New octant 749 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:50:47 - New octant 750 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:50:54 - New octant 751 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:01 - New octant 752 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:08 - New octant 753 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:14 - New octant 754 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:22 - New octant 755 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:29 - New octant 756 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:36 - New octant 757 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:44 - New octant 758 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:50 - New octant 759 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:51:57 - New octant 760 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:52:04 - New octant 761 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:52:11 - New octant 762 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:52:19 - New octant 763 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:52:26 - New octant 764 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:52:33 - New octant 765 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:52:39 - New octant 766 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:52:47 - New octant 767 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:52:54 - New octant 768 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:01 - New octant 769 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:08 - New octant 770 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:16 - New octant 771 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:23 - New octant 772 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:30 - New octant 773 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:37 - New octant 774 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:44 - New octant 775 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:52 - New octant 776 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:53:58 - New octant 777 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:54:05 - New octant 778 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:54:12 - New octant 779 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:54:19 - New octant 780 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:54:26 - New octant 781 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:54:34 - New octant 782 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:54:40 - New octant 783 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:54:48 - New octant 784 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:54:55 - New octant 785 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:55:02 - New octant 786 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:55:09 - New octant 787 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:55:17 - New octant 788 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:55:24 - New octant 789 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:55:31 - New octant 790 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:55:38 - New octant 791 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:55:45 - New octant 792 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:55:53 - New octant 793 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:00 - New octant 794 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:07 - New octant 795 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:13 - New octant 796 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:20 - New octant 797 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:27 - New octant 798 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:34 - New octant 799 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:41 - New octant 800 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:48 - New octant 801 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:56:56 - New octant 802 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:03 - New octant 803 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:09 - New octant 804 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:16 - New octant 805 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:24 - New octant 806 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:30 - New octant 807 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:37 - New octant 808 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:45 - New octant 809 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:51 - New octant 810 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:57:59 - New octant 811 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:58:06 - New octant 812 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:58:14 - New octant 813 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:58:21 - New octant 814 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:58:28 - New octant 815 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:58:35 - New octant 816 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:58:42 - New octant 817 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:58:49 - New octant 818 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:58:56 - New octant 819 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:03 - New octant 820 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:09 - New octant 821 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:16 - New octant 822 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:24 - New octant 823 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:30 - New octant 824 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:38 - New octant 825 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:45 - New octant 826 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:52 - New octant 827 / 3840 in epoch 0 / 10
+
+
+23-07-23 11:59:59 - New octant 828 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:00:06 - New octant 829 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:00:13 - New octant 830 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:00:20 - New octant 831 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:00:28 - New octant 832 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:00:34 - New octant 833 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:00:41 - New octant 834 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:00:49 - New octant 835 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:00:56 - New octant 836 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:03 - New octant 837 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:09 - New octant 838 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:16 - New octant 839 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:23 - New octant 840 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:29 - New octant 841 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:36 - New octant 842 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:44 - New octant 843 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:51 - New octant 844 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:01:58 - New octant 845 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:02:05 - New octant 846 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:02:13 - New octant 847 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:02:20 - New octant 848 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:02:27 - New octant 849 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:02:34 - New octant 850 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:02:42 - New octant 851 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:02:48 - New octant 852 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:02:56 - New octant 853 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:03:03 - New octant 854 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:03:10 - New octant 855 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:03:17 - New octant 856 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:03:24 - New octant 857 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:03:31 - New octant 858 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:03:38 - New octant 859 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:03:46 - New octant 860 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:03:53 - New octant 861 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:00 - New octant 862 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:08 - New octant 863 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:14 - New octant 864 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:21 - New octant 865 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:29 - New octant 866 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:35 - New octant 867 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:42 - New octant 868 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:49 - New octant 869 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:04:57 - New octant 870 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:03 - New octant 871 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:10 - New octant 872 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:18 - New octant 873 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:24 - New octant 874 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:32 - New octant 875 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:38 - New octant 876 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:45 - New octant 877 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:52 - New octant 878 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:05:59 - New octant 879 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:06:06 - New octant 880 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:06:13 - New octant 881 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:06:20 - New octant 882 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:06:27 - New octant 883 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:06:34 - New octant 884 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:06:41 - New octant 885 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:06:49 - New octant 886 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:06:56 - New octant 887 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:03 - New octant 888 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:10 - New octant 889 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:17 - New octant 890 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:23 - New octant 891 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:31 - New octant 892 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:38 - New octant 893 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:45 - New octant 894 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:52 - New octant 895 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:07:59 - New octant 896 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:08:06 - New octant 897 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:08:13 - New octant 898 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:08:20 - New octant 899 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:08:27 - New octant 900 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:08:35 - New octant 901 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:08:41 - New octant 902 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:08:48 - New octant 903 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:08:56 - New octant 904 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:03 - New octant 905 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:10 - New octant 906 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:17 - New octant 907 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:23 - New octant 908 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:30 - New octant 909 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:37 - New octant 910 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:44 - New octant 911 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:51 - New octant 912 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:09:58 - New octant 913 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:10:05 - New octant 914 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:10:11 - New octant 915 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:10:18 - New octant 916 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:10:25 - New octant 917 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:10:32 - New octant 918 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:10:39 - New octant 919 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:10:46 - New octant 920 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:10:53 - New octant 921 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:00 - New octant 922 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:08 - New octant 923 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:15 - New octant 924 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:22 - New octant 925 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:29 - New octant 926 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:35 - New octant 927 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:42 - New octant 928 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:49 - New octant 929 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:11:56 - New octant 930 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:03 - New octant 931 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:09 - New octant 932 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:16 - New octant 933 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:24 - New octant 934 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:30 - New octant 935 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:37 - New octant 936 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:45 - New octant 937 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:51 - New octant 938 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:12:59 - New octant 939 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:13:06 - New octant 940 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:13:13 - New octant 941 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:13:21 - New octant 942 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:13:28 - New octant 943 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:13:34 - New octant 944 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:13:42 - New octant 945 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:13:49 - New octant 946 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:13:56 - New octant 947 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:02 - New octant 948 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:09 - New octant 949 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:16 - New octant 950 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:23 - New octant 951 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:30 - New octant 952 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:38 - New octant 953 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:44 - New octant 954 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:52 - New octant 955 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:14:58 - New octant 956 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:15:05 - New octant 957 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:15:12 - New octant 958 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:15:20 - New octant 959 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:15:27 - New octant 960 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:15:34 - New octant 961 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:15:41 - New octant 962 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:15:47 - New octant 963 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:15:54 - New octant 964 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:01 - New octant 965 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:09 - New octant 966 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:15 - New octant 967 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:23 - New octant 968 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:29 - New octant 969 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:36 - New octant 970 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:44 - New octant 971 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:51 - New octant 972 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:16:58 - New octant 973 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:17:05 - New octant 974 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:17:12 - New octant 975 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:17:19 - New octant 976 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:17:27 - New octant 977 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:17:34 - New octant 978 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:17:40 - New octant 979 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:17:47 - New octant 980 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:17:55 - New octant 981 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:18:02 - New octant 982 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:18:09 - New octant 983 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:18:16 - New octant 984 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:18:23 - New octant 985 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:18:31 - New octant 986 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:18:38 - New octant 987 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:18:46 - New octant 988 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:18:53 - New octant 989 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:01 - New octant 990 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:07 - New octant 991 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:14 - New octant 992 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:22 - New octant 993 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:29 - New octant 994 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:37 - New octant 995 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:43 - New octant 996 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:50 - New octant 997 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:19:57 - New octant 998 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:20:05 - New octant 999 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:20:11 - New octant 1000 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:20:18 - New octant 1001 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:20:26 - New octant 1002 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:20:33 - New octant 1003 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:20:40 - New octant 1004 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:20:47 - New octant 1005 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:20:54 - New octant 1006 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:01 - New octant 1007 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:08 - New octant 1008 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:16 - New octant 1009 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:22 - New octant 1010 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:30 - New octant 1011 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:37 - New octant 1012 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:44 - New octant 1013 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:51 - New octant 1014 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:21:59 - New octant 1015 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:22:06 - New octant 1016 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:22:14 - New octant 1017 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:22:21 - New octant 1018 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:22:28 - New octant 1019 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:22:35 - New octant 1020 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:22:42 - New octant 1021 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:22:49 - New octant 1022 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:22:56 - New octant 1023 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:03 - New octant 1024 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:10 - New octant 1025 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:18 - New octant 1026 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:25 - New octant 1027 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:32 - New octant 1028 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:39 - New octant 1029 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:46 - New octant 1030 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:52 - New octant 1031 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:23:59 - New octant 1032 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:24:06 - New octant 1033 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:24:13 - New octant 1034 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:24:20 - New octant 1035 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:24:27 - New octant 1036 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:24:33 - New octant 1037 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:24:40 - New octant 1038 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:24:47 - New octant 1039 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:24:54 - New octant 1040 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:01 - New octant 1041 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:09 - New octant 1042 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:15 - New octant 1043 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:23 - New octant 1044 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:30 - New octant 1045 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:37 - New octant 1046 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:44 - New octant 1047 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:52 - New octant 1048 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:25:58 - New octant 1049 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:26:06 - New octant 1050 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:26:13 - New octant 1051 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:26:19 - New octant 1052 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:26:27 - New octant 1053 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:26:34 - New octant 1054 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:26:41 - New octant 1055 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:26:48 - New octant 1056 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:26:55 - New octant 1057 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:01 - New octant 1058 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:08 - New octant 1059 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:15 - New octant 1060 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:22 - New octant 1061 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:30 - New octant 1062 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:37 - New octant 1063 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:44 - New octant 1064 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:52 - New octant 1065 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:27:59 - New octant 1066 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:28:06 - New octant 1067 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:28:13 - New octant 1068 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:28:20 - New octant 1069 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:28:27 - New octant 1070 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:28:34 - New octant 1071 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:28:41 - New octant 1072 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:28:49 - New octant 1073 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:28:56 - New octant 1074 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:29:03 - New octant 1075 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:29:10 - New octant 1076 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:29:17 - New octant 1077 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:29:25 - New octant 1078 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:29:32 - New octant 1079 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:29:39 - New octant 1080 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:29:47 - New octant 1081 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:29:53 - New octant 1082 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:01 - New octant 1083 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:08 - New octant 1084 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:14 - New octant 1085 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:22 - New octant 1086 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:29 - New octant 1087 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:36 - New octant 1088 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:43 - New octant 1089 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:50 - New octant 1090 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:30:57 - New octant 1091 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:04 - New octant 1092 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:12 - New octant 1093 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:18 - New octant 1094 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:25 - New octant 1095 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:32 - New octant 1096 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:38 - New octant 1097 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:45 - New octant 1098 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:52 - New octant 1099 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:31:59 - New octant 1100 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:32:05 - New octant 1101 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:32:12 - New octant 1102 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:32:19 - New octant 1103 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:32:26 - New octant 1104 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:32:33 - New octant 1105 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:32:40 - New octant 1106 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:32:47 - New octant 1107 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:32:54 - New octant 1108 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:33:01 - New octant 1109 / 3840 in epoch 0 / 10
+
+
+23-07-23 12:33:09 - New octant 1110 / 3840 in epoch 0 / 10
+
+

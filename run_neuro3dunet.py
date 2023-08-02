@@ -1,4 +1,5 @@
 import os
+import pdb
 import h5py # note: importing h5py multiple times can cause an error
 import numpy as np
 import pandas as pd
@@ -16,10 +17,14 @@ from unet3d.buildingblocks import DoubleConv, ResNetBlock, ResNetBlockSE, \
 from unet3d.utils import get_class, number_of_features_per_level
 from unet3d.model import UNet3D
 
+import logging
+logging.basicConfig(filename="unet.log", level=logging.DEBUG, format='%(asctime)s - %(message)s',
+                    datefmt='%y-%m-%d %H:%M:%S')
 
 import torch
 import torch.nn as nn
 import torch.optim as optim
+
 
 
 class HDF5Dataset(Dataset):
@@ -29,7 +34,7 @@ class HDF5Dataset(Dataset):
             data_dir/
                 -- subject0.hdf5 (file with two datasets)
                     -- x_name: 4D array
-                    -- y_name: 4D array
+                      -- y_name: 4D array
                 -- subject1.hdf5 (next file with two datasets)
                     -- ...
         Note also that this directory should not contain any other files
@@ -87,6 +92,7 @@ class HDF5Dataset(Dataset):
         # data = ...
         #x = x[:, :64, :64, :64]
         #y = y[:, :64, :64, :64]
+
         return x, y
     
 
@@ -113,23 +119,34 @@ def train(dl_train,
   
     # Training loop
     best_val_loss = float('inf')
-    
+
     for epoch in range(epochs):
         # Training
+        logging.debug("\nBeginning epoch \n")
         model.train()
         train_loss = 0.0
+        sample_set = 0
         for inputs, labels in dl_train:
+            print("-------------------------\n")
+            logging.debug(f"New octant {sample_set + 1} / 3840 in epoch {epoch} / {epochs}\n\n")
+            print(f"New octant {sample_set + 1} / 3840 in epoch {epoch} / {epochs}\n\n")
+            print("Creating optimizer\n")
             optimizer.zero_grad()
-
+            print("Sending data to device\n")
             inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
             labels = labels.to(torch.bfloat16).to(device, dtype=float)
             # Forward pass
+
+            ## comments showing cuda activity
             #print(torch.cuda.memory_summary(abbreviated=False))
-            os.system("nvidia-smi")
+            #os.system("nvidia-smi")
+            print("Calculating outputs\n")
             outputs = model(inputs)
+            print("Calculating loss\n")
             loss = criterion(outputs, labels)
 
             # Backward pass and optimization
+            print("Backward pass\n")
             loss.backward()
             optimizer.step()
 
@@ -138,6 +155,8 @@ def train(dl_train,
             inputs.detach()
             labels.detach()
             torch.cuda.empty_cache()
+            sample_set += 1
+            
         # Validation
         model.eval()
         val_loss = 0.0
@@ -152,6 +171,7 @@ def train(dl_train,
                 labels.detach()
                 torch.cuda.empty_cache()
         # Compute average loss
+        
         train_loss /= len(dl_train)
         val_loss /= len(dl_val)
 
@@ -160,6 +180,7 @@ def train(dl_train,
 
         # Print progress
         print(f"Epoch {epoch+1}/{epochs}, Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}")
+        logging.info(f"Epoch {epoch+1}/{epochs}, Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}")
 
         # Check if current validation loss is the best so far
         if val_loss < best_val_loss:
@@ -173,9 +194,11 @@ def train(dl_train,
     return model
     
 def main():
-
-    train_dir = 'data/h5/train'
-    val_dir = 'data/h5/val'
+    train_dir = '/home/weiner/bparker/NotBackedUp/train_chunks'
+    val_dir = '/home/weiner/bparker/NotBackedUp/test_chunks'
+    
+    #train_dir = 'data/h5/train'
+    #val_dir = 'data/h5/val'
     # option to use DistributedSampler to distribute data over multiple GPUs
 
     batch_size = 1
@@ -212,7 +235,7 @@ def main():
         #                                     world_size = 2,
         #                                     rank = 1)
         #model = nn.parallel.DistributedDataParallel(model, device_ids=[0,1])
-        model = nn.DataParallel(model, device_ids=[0,1])
+        #model = nn.DataParallel(model, device_ids=[0,1])
         model.to(device, dtype=float)
     else:
         # GPU is not available, fall back to CPU
@@ -249,9 +272,12 @@ def main():
     epochs = 10
     lr_scheduler_patience = 3
     lr_scheduler_factor = 0.1
-    print(f"\nTraining model\n\nepochs = {epochs}\nlr_scheduler_patience = {lr_scheduler_patience}\nlr_scheduler_factor = {lr_scheduler_factor}")
+    logging.info("\nTraining model\n\nepochs = {epochs}\nlr_scheduler_patience = {lr_scheduler_patience}\nlr_scheduler_factor = {lr_scheduler_factor}")
+    print("\nTraining model\n\nepochs = {epochs}\nlr_scheduler_patience = {lr_scheduler_patience}\nlr_scheduler_factor = {lr_scheduler_factor}")
+    #pdb.set_trace()
     train(dl_train, dl_val, model, optimizer, criterion, device)
 
 if __name__ == "__main__":
     main()
 
+    
