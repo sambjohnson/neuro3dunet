@@ -16,6 +16,7 @@ from unet3d.buildingblocks import DoubleConv, ResNetBlock, ResNetBlockSE, \
     create_decoders, create_encoders
 from unet3d.utils import get_class, number_of_features_per_level
 from unet3d.model import UNet3D
+from unet3d.losses import BCEDiceLoss
 
 import logging
 logging.basicConfig(filename="unet.log", level=logging.DEBUG, format='%(asctime)s - %(message)s',
@@ -69,19 +70,19 @@ class HDF5Dataset(Dataset):
             x_name
             y_name
             ordered_subject_list
-        -----       
+        -----
         Returns:
             Pytorch index-based Dataset where each sample is an x, y pair of tensors
                 corresponding to a 3D T1 scan and a 4D set of anatomical labels (one-hot)
-        
+
     """
-    
-    def __init__(self, 
-                 data_dir, 
+
+    def __init__(self,
+                 data_dir,
                  x_name=None,
                  y_name=None,
                  ordered_subject_list=None):
-        
+
         self.data_dir = data_dir
 
         # parse default args
@@ -89,24 +90,24 @@ class HDF5Dataset(Dataset):
         y_name = 'label' if y_name is None else y_name
         self.x_name = x_name
         self.y_name = y_name
-        
+
         # parse subject ordering, if specified
         if ordered_subject_list is None:
             ordered_subject_list = sorted(os.listdir(data_dir))
         self.subjects = ordered_subject_list
-        
+
 
     def __len__(self):
         return len(self.subjects)
-    
+
 
     def __getitem__(self, index):
-        subject = self.subjects[index]  # Select the current datapoint (subject)    
+        subject = self.subjects[index]  # Select the current datapoint (subject)
         h5 = h5py.File(f'{self.data_dir}/{subject}', 'r')
-        
+
         x_np = h5.get(self.x_name)
         y_np = h5.get(self.y_name)
-        
+
         x = t.from_numpy(np.array(x_np))
         y = t.from_numpy(np.array(y_np))
 
@@ -117,69 +118,58 @@ class HDF5Dataset(Dataset):
         #x = x[:, :64, :64, :64]
         #y = y[:, :64, :64, :64]
 
-        return x, y
-    
+        return x, y, subject
 
-def train(dl_train, 
-          dl_val, 
-          model, 
+def train(dl_train,
+          dl_val,
+          model,
           optimizer,
           criterion,
           device,
-          checkpoint_dir,
+          with_predictions=False,
           epochs=10,
-          lr_scheduler=None
+          lr_scheduler=None,
+          output_path='./predictions'
           ):
-    """ Function to wrap the main training loop.
+    """ Note: the default path 'output_path' may be inconvenient. Be sure
+        to specify your preferred directory in which to save model predictions.
     """
-    
-    # parse default parameters
     if lr_scheduler is None:
         default_lr_scheduler_patience = 3
         default_lr_scheduler_factor = 0.1
-        lr_scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer, 
-                                                            patience=default_lr_scheduler_patience, 
+        lr_scheduler = optim.lr_scheduler.ReduceLROnPlateau(optimizer,
+                                                            patience=default_lr_scheduler_patience,
                                                             factor=default_lr_scheduler_factor
-                                                           )
-  
+                                                            )
+
     # Training loop
     best_val_loss = float('inf')
 
     # Load the last saved epoch and optimizer state (if available)
     start_epoch = load_checkpoint(checkpoint_dir, model, optimizer)
-    
+
     for epoch in range(epochs):
         # Training
-        logging.debug("\nBeginning epoch \n")
         model.train()
         train_loss = 0.0
         sample_set = 0
-        for inputs, labels in dl_train:
-            print("-------------------------\n")
-            logging.debug(f"New octant {sample_set + 1} / 3840 in epoch {epoch} / {epochs}\n\n")
-            print(f"New octant {sample_set + 1} / 3840 in epoch {epoch} / {epochs}\n\n")
-            print("Creating optimizer")
+
+        for inputs, labels, subject in dl_train:
             optimizer.zero_grad()
-            print("Sending data to device")
             inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
             labels = labels.to(torch.bfloat16).to(device, dtype=float)
-            # Forward pass
-
-            ## comments showing cuda activity
-            #print(torch.cuda.memory_summary(abbreviated=False))
-            #os.system("nvidia-smi")
-            print("Calculating outputs")
             outputs = model(inputs)
-            print("Calculating loss")
             loss = criterion(outputs, labels)
-
-            # Backward pass and optimization
-            print("Backward pass")
             loss.backward()
             optimizer.step()
 
-            
             train_loss += loss.item()
+
+            # Save training predictions
+            if with_predictions:
+                train_predictions = outputs.cpu().numpy()
+                np.save(f'{output_path}/train_predictions_epoch_{epoch}_{subject}.npy', train_predictions)
+
             inputs.detach()
             labels.detach()
             torch.cuda.empty_cache()
@@ -189,43 +179,40 @@ def train(dl_train,
         # Validation
         model.eval()
         val_loss = 0.0
+
         with torch.no_grad():
-            for inputs, labels in dl_val:
+            for inputs, labels, subject in dl_val:  # changed to keep track of index
                 inputs = inputs.to(torch.bfloat16).to(device, dtype=float)
                 labels = labels.to(torch.bfloat16).to(device, dtype=float)
                 outputs = model(inputs)
                 loss = criterion(outputs, labels)
                 val_loss += loss.item()
+
+                # Save validation predictions
+                if with_predictions:
+                    val_predictions = outputs.cpu().numpy()
+                    np.save(f'{output_path}/val_predictions_epoch_{epoch}_{subject}.npy', val_predictions)
+
                 inputs.detach()
                 labels.detach()
                 torch.cuda.empty_cache()
-        # Compute average loss
-        
+
         train_loss /= len(dl_train)
         val_loss /= len(dl_val)
 
-        # Update learning rate scheduler
         lr_scheduler.step(val_loss)
 
-        # Print progress
         print(f"Epoch {epoch+1}/{epochs}, Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}")
-        logging.info(f"Epoch {epoch+1}/{epochs}, Train Loss: {train_loss:.4f}, Val Loss: {val_loss:.4f}")
 
-        # Check if current validation loss is the best so far
         if val_loss < best_val_loss:
             best_val_loss = val_loss
-            # Save the model checkpoint if desired
 
-        # Check early stopping condition if desired
-        # TODO
-
-    # Training complete
     return model
-    
+
 def main():
     train_dir = '/home/weiner/bparker/NotBackedUp/train_chunks'
     val_dir = '/home/weiner/bparker/NotBackedUp/test_chunks'
-    
+
     #train_dir = 'data/h5/train'
     #val_dir = 'data/h5/val'
     # option to use DistributedSampler to distribute data over multiple GPUs
@@ -240,7 +227,7 @@ def main():
     print("Loaded Datasets\n")
 
 
-    
+
     ## Define model
     in_channels = 1
     out_channels = 102
@@ -269,14 +256,14 @@ def main():
     else:
         # GPU is not available, fall back to CPU
         device = torch.device("cpu")
-        model.to(device, dtype=float) 
+        model.to(device, dtype=float)
 
 
-        
-    ### DistributedDataParallel chunk
+
+        ### DistributedDataParallel chunk
     ## When this is run, it hangs at this stage
     ## Attempting to distribute the data with DistributedSampler()
-    
+
     #dl_train = DataLoader(ds_train, batch_size=batch_size, shuffle=True)
     #dl_val = DataLoader(ds_val, batch_size=batch_size, shuffle=False)
     #print("Loaded Datasets\n")
@@ -284,19 +271,19 @@ def main():
 
     #ds_train = HDF5Dataset(data_dir=train_dir)
     #ds_train = DistributedSampler(ds_train)
-    
+
     #ds_val = HDF5Dataset(data_dir=val_dir)
     #ds_val = DistributedSampler(ds_val)
     #####
 
     ## Training
-    
-    checkpoint_dir = './checkpoints'  # change this based on your OS and preferences
+
+    checkpoint_dir = './checkpoints/BCEDice'  # change this based on your OS and preferences
     os.makedirs(checkpoint_dir, exist_ok=True)
     print("Defining optimizer for model")
     optimizer = optim.Adam(model.parameters())
-    criterion = nn.CrossEntropyLoss()
-    
+    criterion = BCEDiceLoss(alpha=.67, beta=.33)
+
     # Other training parameters
     epochs = 10
     lr_scheduler_patience = 3
@@ -309,4 +296,5 @@ def main():
 if __name__ == "__main__":
     main()
 
-    
+
+
